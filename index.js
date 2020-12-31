@@ -24,7 +24,7 @@ class Triangle extends Polygon{
     if(this.array[2]+this.array[1]<this.array[0])
     return valid;
     valid=true;
-    return "valid";
+    return valid;
     }
   }
 
