@@ -16,12 +16,14 @@ class Polygon {
 
 class Triangle extends Polygon{
   get isValid(){
+    let valid=false;
     if(this.array[0]+this.array[1]<this.array[2])
-    return "invalid";
+    return valid;
     if(this.array[0]+this.array[2]<this.array[1])
-    return "invalid";
+    return valid;
     if(this.array[2]+this.array[1]<this.array[0])
-    return "invalid";
+    return valid;
+    valid=true;
     return "valid";
     }
   }
